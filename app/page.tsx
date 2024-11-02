@@ -1,5 +1,5 @@
 import TokenSelectorModal from "@/src/modals/token-selector";
-import Swap from "@/src/swap";
+import Swap from "@/src/pages/swap";
 
 export default function Home() {
   return (
