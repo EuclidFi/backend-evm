@@ -5,8 +5,8 @@ import Providers from "./providers";
 import Layout from "@/src/components/layout";
 
 export const metadata: Metadata = {
-  title: "Euclid Nextjs Starter",
-  description: "Euclid Nextjs Starter Template",
+  title: "EuclidFi",
+  description: "EuclidFi Template",
 };
 
 export default function RootLayout({
