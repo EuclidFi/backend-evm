@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 import { AiOutlineSearch, AiOutlineMenu } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import AppLogo from '../../../public/images/logo.png';
+import AppLogo from '../../../public/eculidfi.png';
 import Image from "next/image";
 
 export default function Navbar() {
@@ -25,20 +25,20 @@ export default function Navbar() {
     return (
         <nav className="bg-black text-white py-4">
             <div className="mx-auto justify-between items-center
-        bg-black w-screen px-4 flex ">
+                    bg-black w-screen px-4 flex ">
                 <Link href="/">
                     <div className="flex items-center cursor-pointer">
-                        <Image src={AppLogo} height={80} width={50} alt="mantle logo" className="px-2 rounded" />
+                        <Image src={AppLogo} height={50} alt="mantle logo" className="px-2 rounded" />
                         <div className="text-[32px] text-white font-serif"
                         >
-                            BaseCrate
+                            EuclidFi
                         </div>
                         <div className="ml-[0.8rem] text-white font-semibold text-2xl"></div>
                     </div>
                 </Link>
 
                 <div className="hidden md:flex items-center space-x-4">
-                    <div className="relative flex flex-1 mx-[0.8rem] items-center bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] ">
+                    {/* <div className="relative flex flex-1 mx-[0.8rem] items-center bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] ">
                         <input
                             type="text"
                             placeholder="Track Your Investment"
@@ -52,7 +52,7 @@ export default function Navbar() {
                         >
                             <AiOutlineSearch className="text-[#8a939b]" />
                         </button>
-                    </div>
+                    </div> */}
 
                     <button
                         onClick={() => router.push("/dashboard")}
@@ -62,7 +62,13 @@ export default function Navbar() {
                         <span>Dashboard</span>
                     </button>
 
-                    <ConnectButton />
+                    <Button onClick={() => onModalStateChange(true)} >{(isConnected && chain?.chain_uid) ?
+                        <div className="flex flex-row items-center gap-x-2">
+                            <ChainHorizontal chain_uid={chain?.chain_uid} />
+                            <ChevronDown className="h-4 w-4" />
+                        </div> : "Connect Wallet"}
+                    </Button>
+                    {/* <ConnectButton /> */}
                 </div>
 
                 <button onClick={toggleMenu} className="md:hidden">
@@ -99,21 +105,22 @@ export default function Navbar() {
                         <span>Dashboard</span>
                     </button>
 
-                    <div className="w-full">
+                    <div className="w-full font-bold">
                         {/* <ConnectButton /> */}
+                        <Button onClick={() => onModalStateChange(true)} >{(isConnected && chain?.chain_uid) ?
+                            <div className="flex flex-row items-center gap-x-2  ">
+                                <ChainHorizontal chain_uid={chain?.chain_uid} />
+                                <ChevronDown className=" h-4 w-4" />
+                            </div> :
+                            <div className="font-bold ">
+                                Connect Wallet
+                            </div>
+                        }
+                        </Button>
                     </div>
+
                 </div>
             )}
-            <div className="flex flex-row items-center bg-slate-500/10 backdrop-blur-md py-3 px-6">
-                <h3 className="text-md">EuclidFi</h3>
-                <div className="flex-1 flex flex-row items-center justify-end">
-                    <Button onClick={() => onModalStateChange(true)} >{(isConnected && chain?.chain_uid) ?
-                        <div className="flex flex-row items-center gap-x-2">
-                            <ChainHorizontal chain_uid={chain?.chain_uid} />
-                            <ChevronDown className="h-4 w-4" />
-                        </div> : "Connect Wallet"}</Button>
-                </div>
-            </div>
         </nav>
 
     )

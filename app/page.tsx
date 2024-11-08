@@ -3,10 +3,9 @@ import Swap from "@/src/swap";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-bold">EuclidFi</h1>
-      <Swap />
-      <TokenSelectorModal />
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-16 lg:p-24">
+      <HeroComponent />
+      <CratesTable />
+    </main>
   );
 }

@@ -6,7 +6,7 @@ import Layout from "@/src/components/layout";
 
 export const metadata: Metadata = {
   title: "EuclidFi",
-  description: "EuclidFi Template",
+  description: "EuclidFi",
 };
 
 export default function RootLayout({
