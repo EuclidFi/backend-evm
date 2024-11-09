@@ -1,5 +1,5 @@
-import TokenSelectorModal from "@/src/modals/token-selector";
-import Swap from "@/src/swap";
+import HeroComponent from '@/src/components/Hero'
+import CratesTable from '@/src/components/CratesTable'
 
 export default function Home() {
   return (
