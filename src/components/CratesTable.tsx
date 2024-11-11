@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { CiDollar } from 'react-icons/ci';
-import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
+import { HoverBorderGradient } from '@/src/components/ui/hover-border-gradient';
 import { useRouter } from 'next/navigation';
 import CrateCard from './CrateCard';
 
@@ -75,11 +75,7 @@ const Grid: React.FC = () => {
             <div className='py-2'>
                 <div className='text-3xl lg:text-5xl text-center'>Select Your Crate</div>
             </div>
-<<<<<<< HEAD
-            <div className="flex gap-4 text-center align-middle justify-center items-center pb-4 px-5">
-=======
             <div className="flex gap-4 text-center align-middle justify-center items-center pb-4 px-5 sm:text-[10px]">
->>>>>>> 9db5f433b25b9bf4616c6ecdf8190cacfd35aa8e
                 {categories.map((category) => (
                     <button
                         key={category}

@@ -18,19 +18,6 @@ const CrateCard: React.FC<CrateCardProps> = ({ crateData }) => {
   const { id, name, category, containsTokens, oneMonthReturn, oneYearReturn } =
     crateData;
 
-<<<<<<< HEAD
-    return (
-        <div className="card my-5 bg-base-200 shadow-xl ">
-            <div className=" p-5 justify-between items-center">
-                <div className="flex flex-row items-center gap-4">
-                    <CiDollar className="bg-yellow-300 rounded-xl text-3xl" />
-                    <div>
-                        <h2 className="text-left text-xl font-semibold">{name}</h2>
-                        <div className="text-[12px]">Category: {category}</div>
-                    </div>
-                </div>
-                <div className="divider divider-neutral"></div>
-=======
   return (
     <div className="card my-5 bg-gray-200 shadow-xl">
       <div className=" p-5 justify-between items-center">
@@ -42,7 +29,6 @@ const CrateCard: React.FC<CrateCardProps> = ({ crateData }) => {
           </div>
         </div>
         <div className="divider divider-neutral"></div>
->>>>>>> 9db5f433b25b9bf4616c6ecdf8190cacfd35aa8e
 
         <div>
           <div className="pb-4">
@@ -85,6 +71,7 @@ const CrateCard: React.FC<CrateCardProps> = ({ crateData }) => {
       </div>
     </div>
   );
-};
+}
+
 
 export default CrateCard;
