@@ -25,9 +25,10 @@ import { useExecuteSwap } from "../hooks/rest/useExecuteSwap";
 import { toast } from "sonner";
 import { gqlClient } from "@/lib/gql/client";
 import reactQueryClient from "@/lib/react-query/client";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 
-export default function Swap() {
+export default function SwapEVM() {
     const { chain } = useWalletStore();
     const { onModalStateChange } = useWalletModalStore();
     const [fromToken, setFromToken] = useState<string>("");

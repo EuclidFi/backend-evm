@@ -71,9 +71,9 @@ const Grid: React.FC = () => {
     });
 
     return (
-        <div className='p-5'>
+        <div className='p-5 text-black'>
             <div className='py-2'>
-                <div className='text-3xl lg:text-5xl text-center'>Select Your Crate</div>
+                <div className='text-3xl lg:text-5xl text-center'>Select Your Investment</div>
             </div>
             <div className="flex gap-4 text-center align-middle justify-center items-center pb-4 px-5 sm:text-[10px]">
                 {categories.map((category) => (

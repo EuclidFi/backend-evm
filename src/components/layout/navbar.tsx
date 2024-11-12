@@ -31,12 +31,11 @@ export default function Navbar() {
                         <Image src={AppLogo} height={50} alt="mantle logo" className="px-2 rounded" />
                         <div className="text-[32px] text-white font-serif"
                         >
-                            EuclidFi
+                            {/* EuclidFi */}
                         </div>
                         <div className="ml-[0.8rem] text-white font-semibold text-2xl"></div>
                     </div>
                 </Link>
-
                 <div className="hidden md:flex items-center space-x-4">
                     {/* <div className="relative flex flex-1 mx-[0.8rem] items-center bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c] ">
                         <input
@@ -55,12 +54,45 @@ export default function Navbar() {
                     </div> */}
 
                     <button
+                        onClick={() => router.push("/swap")}
+                        className="flex items-center space-x-1 hover:text-gray-300"
+                    >
+                        <span>Swap</span>
+                    </button>
+
+
+                    <button
+                        onClick={() => router.push("/swap-evm")}
+                        className="flex items-center space-x-1 hover:text-gray-300"
+                    >
+                        <span>Swap-EVM</span>
+                    </button>
+
+                    <button
+                        onClick={() => router.push("/invest")}
+                        className="flex items-center space-x-1 hover:text-gray-300"
+                    >
+                        <span> Invest</span>
+                    </button>
+
+                    {/* <button
+                        onClick={() => router.push("/swap-eth")}
+                        className="flex items-center space-x-1 hover:text-gray-300"
+                    >
+                        <span></span>
+                    </button> */}
+
+
+
+                    <button
                         onClick={() => router.push("/dashboard")}
                         className="flex items-center space-x-1 hover:text-gray-300"
                     >
                         <CgProfile />
                         <span>Dashboard</span>
                     </button>
+
+
 
                     <Button onClick={() => onModalStateChange(true)} >{(isConnected && chain?.chain_uid) ?
                         <div className="flex flex-row items-center gap-x-2">
