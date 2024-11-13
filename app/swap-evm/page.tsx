@@ -11,7 +11,7 @@ export default function Home() {
                     Cross Chain Swap-EVM
                 </h1>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Seamlessly swap tokens across multiple Cosmos to EVM-based chains with the best rates and lowest fees.
+                    Seamlessly swap tokens across multiple Cosmos to EVM-based chains.
                 </p>
             </div>
 

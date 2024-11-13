@@ -151,6 +151,9 @@ export default function SwapEVM() {
                 <div className="space-y-4">
                     <div className="bg-gray-50 rounded-xl p-4 border border-gray-100">
                         <div className="flex justify-between items-center mb-2">
+                            <div className="space-y-2">
+                            </div>
+
                             <span className="text-sm text-gray-600">From</span>
                             {fromToken && chain && (
                                 <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -211,6 +214,16 @@ export default function SwapEVM() {
                     </div>
 
                     {/* To Token Section */}
+                    <div className="bg-gray-50 rounded-xl p-4 border border-gray-100">
+                        <div className="flex items-center gap-2 text-sm text-gray-600">
+                            <span className="font-bold">Connect Your EVM Wallet</span>
+                            <div className="px-5">
+                            <ConnectButton />
+
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="bg-gray-50 rounded-xl p-4 border border-gray-100">
                         <div className="flex justify-between items-center mb-2">
                             <span className="text-sm text-gray-600">To</span>
