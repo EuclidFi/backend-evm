@@ -17,7 +17,7 @@ const categories = ['All', 'DeFi', 'Meme', 'GameFi'];
 const crateData = [
     {
         id: "a",
-        name: 'DeFi Crate 1',
+        name: 'DeFi Basket 1',
         category: 'DeFi',
         containsTokens: ['TON', '1INCH', 'SUSHI'],
         oneMonthReturn: 50.00,
@@ -25,7 +25,7 @@ const crateData = [
     },
     {
         id: "b",
-        name: 'DeFi Crate 2',
+        name: 'DeFi Basket 2',
         category: 'DeFi',
         containsTokens: ['POL', 'ARB', 'OGC'],
         oneMonthReturn: 50.00,
@@ -33,7 +33,7 @@ const crateData = [
     },
     {
         id: "c",
-        name: 'DeFi Crate 3',
+        name: 'DeFi Basket 3',
         category: 'DeFi',
         containsTokens: ['UNI', 'BNB', 'TON'],
         oneMonthReturn: 50.00,
@@ -41,7 +41,7 @@ const crateData = [
     },
     {
         id: "d",
-        name: 'Meme Crate 1',
+        name: 'Meme Basket 1',
         category: 'Meme',
         containsTokens: ['SONA', 'LOHA', 'SILVER'],
         oneMonthReturn: 50.00,
@@ -49,7 +49,7 @@ const crateData = [
     },
     {
         id: "e",
-        name: 'Meme Crate 2',
+        name: 'Meme Basket 2',
         category: 'Meme',
         containsTokens: ['PEPE', 'MOTO', 'DOGE'],
         oneMonthReturn: 50.00,
@@ -73,7 +73,7 @@ const Grid: React.FC = () => {
     return (
         <div className='p-5 text-black'>
             <div className='py-2'>
-                <div className='text-3xl lg:text-5xl text-center'>Select Your Investment</div>
+                <div className='text-xl lg:text-2xl text-center font-bold'>Select Your Cross Chain Investment Basket</div>
             </div>
             <div className="flex gap-4 text-center align-middle justify-center items-center pb-4 px-5 sm:text-[10px]">
                 {categories.map((category) => (

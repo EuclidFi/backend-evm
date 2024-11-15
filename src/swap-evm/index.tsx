@@ -268,7 +268,7 @@ export default function SwapEVM() {
                 </div>
 
                 {/* Route Selection */}
-                {(fromToken && toToken && routes?.paths?.length > 0) && (
+                {(fromToken && toToken && (routes as any)?.paths?.length > 0) && (
                     <div className="mt-4 p-3 bg-gray-50 rounded-lg border border-gray-100">
                         <div className="flex justify-between items-center text-sm">
                             <span className="text-gray-600">Route</span>

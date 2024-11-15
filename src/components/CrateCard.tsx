@@ -61,7 +61,7 @@ const CrateCard: React.FC<CrateCardProps> = ({ crateData }) => {
           </div>
 
           <div>
-            <Link href={`/crate/${id}/${name}`}>
+            <Link href={`/invest/${id}/${name}`}>
               <button className="bg-black text-white my-2 px-4 py-2 rounded-3xl">
                 Invest Now
               </button>

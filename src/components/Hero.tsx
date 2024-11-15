@@ -50,7 +50,7 @@ const HeroComponent = () => {
         </Link>
 
         <div className="relative flex flex-1 flex-col items-stretch sm:flex-none">
-          <Link href="/crate/a/DeFi%20Crate%201">
+          <Link href="/invest/a/DeFi%20Crate%201">
             <button
               className="bg-yellow-400 group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300"
               id="download-button"

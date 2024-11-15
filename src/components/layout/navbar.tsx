@@ -10,7 +10,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { AiOutlineSearch, AiOutlineMenu } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import AppLogo from '../../../public/eculidfi.png';
 import Image from "next/image";
 
