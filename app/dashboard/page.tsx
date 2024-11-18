@@ -108,7 +108,7 @@ const Dashboard = () => {
       <div className="min-h-screen p-4 sm:p-10">
         <div className="container mx-auto">
           <div className="p-6 sm:p-10 bg-gray-100 rounded-3xl">
-            <h2 className="text-2xl sm:text-3xl font-semibold">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-black">
               Connect your wallet to view your dashboard
             </h2>
           </div>

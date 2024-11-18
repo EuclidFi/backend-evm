@@ -74,6 +74,13 @@ export default function Navbar() {
                         <span> Invest</span>
                     </button>
 
+                    <button
+                        onClick={() => router.push("/invest")}
+                        className="flex items-center space-x-1 hover:text-gray-300"
+                    >
+                        <span> DEX</span>
+                    </button>
+
                     {/* <button
                         onClick={() => router.push("/swap-eth")}
                         className="flex items-center space-x-1 hover:text-gray-300"
